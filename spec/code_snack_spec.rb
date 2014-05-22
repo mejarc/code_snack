@@ -5,6 +5,7 @@ describe CodeSnack do
 
   let(:first_gem) { select_random_gem }
   let(:second_gem) { select_random_gem }
+  let(:src) {  }
 
   it 'lists installed gems' do
     expect(list_gems).to include('rspec')
@@ -14,6 +15,13 @@ describe CodeSnack do
     expect(:first_gem).to_not eql(:second_gem)
   end
 
-  it 'saves the ' do
+  it 'opens the gem source' do
+    pending
   end
+
+  it 'saves the gem source to src.rb' do
+    src = File.open('src.rb', 'r')
+    expect(src.lines.count).to be > 0
+  end
+
 end
