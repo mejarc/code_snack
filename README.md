@@ -1,24 +1,21 @@
 # CodeSnack
 
-TODO: Write a gem description
+Want to improve your understanding of Ruby? One way is to read a lot of code. CodeSnack chooses one of the gems installed on your system, pops open its source code, then presents the first twenty-five lines for you to read in a terminal.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'code_snack'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+At the command line:
 
     $ gem install code_snack
 
 ## Usage
 
-TODO: Write usage instructions here
+At the command line:
+
+    $ code_snack
+
+The result will be 25 lines of a randomly chosen gem's source code,
+printed to the console.
 
 ## Contributing
 
