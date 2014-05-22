@@ -16,12 +16,12 @@ module CodeSnack
     empty_file
     item = select_random_gem
     p item
-    source = `bundle open #{item} > #{SRC}`
+    # source = `bundle open #{item} > #{SRC}`
   end
 
   def open_file
-    File.foreach(SRC).each_slice(100) do |line|
-      print line
+    File.foreach(SRC).each_slice(25) do |line|
+      puts line
     end
   end
 
@@ -32,6 +32,6 @@ end
 
 include CodeSnack
 
-open_gem
+# open_gem
 p SRC.size
 open_file
