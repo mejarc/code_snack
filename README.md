@@ -1,5 +1,4 @@
 # CodeSnack
-2.38pm -
 Want to improve your understanding of Ruby? One way is to read a lot of code. CodeSnack chooses one of the gems installed on your system, pops open its source code, then presents the first twenty-five lines for you to read in a terminal.
 
 ## Installation
